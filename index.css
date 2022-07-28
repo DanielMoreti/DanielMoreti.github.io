@@ -1,0 +1,235 @@
+body {
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.intro {
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    /* background-image: url("assets/img/fundo\ 14.jpg"); */
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(150, 150, 150);
+    border-radius: .3rem;
+}
+
+.jumbotron2 {
+    padding: 2rem 1rem;
+    padding-top: 5px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer p i {
+    color: rgb(150, 150, 150);
+}
+
+#sobre, #informacoes, #consulta, #depoimentos  {
+    margin-top: -80x;
+    padding-top: 80px;
+}
+
+.btn-infso {
+    background:rgb(150, 150, 150);;
+    color: #e9ecef;
+    font-size: 14px;
+    box-shadow: 4px 5px rgb(150, 150, 150);;
+}
+
+.btn-infso:hover,
+.btn-infso:focus,
+.btn-infso:active,
+.btn-infso.active,
+.open>.dropdown-toggle.btn-infso {
+    color: #fff;
+    background-color: rgb(150, 150, 150) !important;
+   
+    /*set the color you want here*/
+}
+
+.card-img-top {
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-content: center;
+    /* make a square container */
+    width: 150px;
+    height: 150px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+}
+
+
+.flow {
+    margin: auto;
+}
+
+.flow img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+
+.flow ul {
+    text-align: center;
+}
+
+.flow ul li {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+
+.flow ul li .fas {
+    background: #ccc;
+    width: 27px;
+    height: 26px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.flow ul li .fas::after {
+    content: '';
+    background: #ccc;
+    height: 5px;
+    width: 210px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    z-index: -1;
+}
+
+.flow ul li:nth-child(3) .fas {
+    background: rgb(150, 150, 150);;
+}
+
+
+.flow ul li:nth-child(3) .fas::after {
+    background: rgb(150, 150, 150);;
+}
+
+
+.flow ul li:nth-child(4) .fas,
+.flow ul li:nth-child(1) .fas,
+.flow ul li:nth-child(2) .fas {
+    background: rgb(150, 150, 150);;
+}
+
+.flow ul li:nth-child(4) .fas::after,
+.flow ul li:nth-child(1) .fas::after,
+.flow ul li:nth-child(2) .fas::after  {
+    background: rgb(150, 150, 150);;
+}
+
+
+.flow ul li:first-child .fa::after {
+    width: 105px;
+    left: 100px;
+}
+
+.flow ul li:last-child .fa::after {
+    width: 105px;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    /* background-image: url("assets/img/fundo\ 14.jpg"); */
+    background-color: rgb(150, 150, 150);;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+section .wave {
+    position: absolute;
+    width: 100%;
+    height: 133px;
+    bottom: 0;
+    left: 0;
+    background-image: url("assets/img/wave.png");
+    animation: animate 10s linear infinite;
+}
+
+section .wave::before {
+    content: '';
+    width: 100%;
+    height: 133px;
+    background: url("assets/img/wave.png");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: animate-reverse 20s linear infinite;
+}
+
+section .wave::after {
+    content: '';
+    width: 100%;
+    height: 133px;
+    background: url("assets/img/wave.png");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    
+    animation: animate-reverse 10s linear infinite;
+}
+
+@keyframes animate
+{
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1360px;
+    }
+}
+
+@keyframes animate-reverse
+{
+    0% {
+        background-position: 1360px;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 150);; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(150, 150, 150);; 
+  }
