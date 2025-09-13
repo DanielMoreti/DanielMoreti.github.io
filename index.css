@@ -33,16 +33,21 @@ footer p i {
     color: rgb(150, 150, 150);
 }
 
-#sobre, #informacoes, #consulta, #depoimentos  {
+#sobre,
+#informacoes,
+#consulta,
+#depoimentos {
     margin-top: -80x;
     padding-top: 80px;
 }
 
 .btn-infso {
-    background:rgb(150, 150, 150);;
+    background: rgb(150, 150, 150);
+    ;
     color: #e9ecef;
     font-size: 14px;
-    box-shadow: 4px 5px rgb(150, 150, 150);;
+    box-shadow: 4px 5px rgb(150, 150, 150);
+    ;
 }
 
 .btn-infso:hover,
@@ -52,7 +57,7 @@ footer p i {
 .open>.dropdown-toggle.btn-infso {
     color: #fff;
     background-color: rgb(150, 150, 150) !important;
-   
+
     /*set the color you want here*/
 }
 
@@ -96,6 +101,14 @@ footer p i {
     display: inline-block;
     width: 200px;
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.flow ul li.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .flow ul li .fas {
@@ -105,6 +118,11 @@ footer p i {
     color: #fff;
     border-radius: 50%;
     padding: 5px;
+    transition: background 0.5s ease;
+}
+
+.flow ul li.complete .fas {
+    background: rgb(0, 200, 0); /* verde ao completar */
 }
 
 .flow ul li .fas::after {
@@ -120,25 +138,29 @@ footer p i {
 }
 
 .flow ul li:nth-child(3) .fas {
-    background: rgb(150, 150, 150);;
+    background: rgb(150, 150, 150);
+    ;
 }
 
 
 .flow ul li:nth-child(3) .fas::after {
-    background: rgb(150, 150, 150);;
+    background: rgb(150, 150, 150);
+    ;
 }
 
 
 .flow ul li:nth-child(4) .fas,
 .flow ul li:nth-child(1) .fas,
 .flow ul li:nth-child(2) .fas {
-    background: rgb(150, 150, 150);;
+    background: rgb(150, 150, 150);
+    ;
 }
 
 .flow ul li:nth-child(4) .fas::after,
 .flow ul li:nth-child(1) .fas::after,
-.flow ul li:nth-child(2) .fas::after  {
-    background: rgb(150, 150, 150);;
+.flow ul li:nth-child(2) .fas::after {
+    background: rgb(150, 150, 150);
+    ;
 }
 
 
@@ -157,11 +179,12 @@ section {
     width: 100%;
     height: 20vh;
     /* background-image: url("assets/img/fundo\ 14.jpg"); */
-    background-color: rgb(150, 150, 150);;
+    background-color: rgb(150, 150, 150);
+    ;
     color: #fff;
     background-size: cover;
     background-attachment: fixed;
-    
+
 }
 
 section .wave {
@@ -196,25 +219,25 @@ section .wave::after {
     bottom: 0;
     left: 0;
     opacity: 0.4;
-    
+
     animation: animate-reverse 10s linear infinite;
 }
 
-@keyframes animate
-{
+@keyframes animate {
     0% {
         background-position: 0;
     }
+
     100% {
         background-position: 1360px;
     }
 }
 
-@keyframes animate-reverse
-{
+@keyframes animate-reverse {
     0% {
         background-position: 1360px;
     }
+
     100% {
         background-position: 0;
     }
@@ -222,14 +245,52 @@ section .wave::after {
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(150, 150, 150);; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(150, 150, 150);; 
-  }
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 150);
+    ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(150, 150, 150);
+    ;
+}
+
+#skills h2 {
+    font-weight: 700;
+    font-family: "Lora", serif;
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    color: #000 !important;
+    /* texto sempre preto */
+    font-weight: 700;
+    text-align: center;
+    transition: width 1.2s ease-in-out;
+    /* suavidade */
+}
+
+.progress {
+    height: 34px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-animada {
+    opacity: 0;
+    /* começa invisível */
+    transform: translateY(30px);
+    /* desloca para baixo */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    /* animação suave */
+}
+
+.img-animada.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* volta para a posição original */
+}
