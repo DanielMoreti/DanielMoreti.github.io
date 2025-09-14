@@ -376,3 +376,65 @@ section .wave::after {
     border-radius: 10px;
     background-color: #fff;
 }
+
+/* Section Title */
+.section-title {
+    color: rgb(150, 150, 150);
+    font-family: 'Lora', serif;
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: rgb(11, 165, 11);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Career Cards */
+.career-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+}
+.career-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.career-card .card-body ul {
+    padding-left: 0;
+    list-style: none;
+}
+.career-card .card-body ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.career-card .card-body ul li::before {
+    content: "\f058"; /* FontAwesome check */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: rgb(11, 165, 11);
+}
+
+/* Animation on scroll */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.career-cards .col-md-6 {
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+}
+.career-cards .col-md-6:nth-child(1) { animation-delay: 0.1s; }
+.career-cards .col-md-6:nth-child(2) { animation-delay: 0.2s; }
+.career-cards .col-md-6:nth-child(3) { animation-delay: 0.3s; }
+.career-cards .col-md-6:nth-child(4) { animation-delay: 0.4s; }
+.career-cards .col-md-6:nth-child(5) { animation-delay: 0.5s; }
+.career-cards .col-md-6:nth-child(6) { animation-delay: 0.6s; }
