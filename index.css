@@ -294,3 +294,54 @@ section .wave::after {
     transform: translateY(0);
     /* volta para a posição original */
 }
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.cards-container .card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-container .card img {
+    width: 100%;
+    height: auto;         /* mantém proporção */
+    max-height: 200px;    /* limita altura do card */
+    object-fit: contain;   /* faz a imagem caber dentro */
+    transition: transform 0.4s ease;
+}
+
+.cards-container .card .card-body {
+    padding: 15px;
+}
+
+.cards-container .card .card-title {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.cards-container .card .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Hover Effects */
+.cards-container .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.cards-container .card:hover img {
+    transform: scale(1.05);  /* leve zoom na imagem ao passar o mouse */
+}
