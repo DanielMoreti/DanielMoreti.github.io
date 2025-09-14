@@ -67,18 +67,22 @@
                 </div>
             </nav>
             <div class="wave jumbotron jumbotron-fluid intro mt-5" style="padding-bottom: 0; margin-bottom: 0;">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-sm-6 col-md-7 text-center">
-                        <img style="margin-top: 50px;" src="assets/img/aplicativo.png" class="img-fluid img-animada" />
+                        <img src="assets/img/aplicativo.png" class="img-fluid img-animada"
+                            style="max-height: 500px; margin-top: 20px;" />
                     </div>
-                    <div class="col-sm-6 col-md-5 col-xl-5">
-                        <br /><br /><br />
-                        <h4 style="color: rgb(255, 255, 255);" class="mb-4">Daniel Moreti Dev</h4>
-                        <h6 style="color: rgb(255, 255, 255);" class="mb-4">
-                            <p>Web and Mobile Application Developer.</p>
-                            <br /><br />
-                            <p><a style="color:rgb(55, 56, 56); padding-left: 0%;" href="#Projetos"><b>Projects I am Working On ◀<i style="color: rgb(150, 150, 150);" class="fas fa-angle-double-left"></i></b></a></p>
-                        </h6>
+                    <div class="col-sm-6 col-md-5 col-xl-5 text-center text-md-start">
+                        <h4 style="color: rgb(255, 255, 255);" class="mb-3">Daniel Moreti Dev</h4>
+                        <p style="color: rgb(255, 255, 255); font-size: 1.1rem;">Web and Mobile Application Developer.
+                        </p>
+                        <p>
+                            <a href="#Projetos" style="color: rgb(55, 56, 56); text-decoration: none;">
+                                <b>Projects I am Working On ◀
+                                    <i class="fas fa-angle-double-left" style="color: rgb(150, 150, 150);"></i>
+                                </b>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -175,10 +179,18 @@
                     </h4>
                     <hr />
                     <ul class="col-sm-12" style="padding-left: 0px;">
-                        <li><br /><i class="fas fa-check"></i><p>Idea</p></li>
-                        <li><br /><i class="fas fa-check"></i><p>Architecture</p></li>
-                        <li><br /><i class="fas fa-check"></i><p>Wireframe Planning</p></li>
-                        <li><br /><i class="fas fa-check"></i><p>Development</p></li>
+                        <li><br /><i class="fas fa-check"></i>
+                            <p>Idea</p>
+                        </li>
+                        <li><br /><i class="fas fa-check"></i>
+                            <p>Architecture</p>
+                        </li>
+                        <li><br /><i class="fas fa-check"></i>
+                            <p>Wireframe Planning</p>
+                        </li>
+                        <li><br /><i class="fas fa-check"></i>
+                            <p>Development</p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -195,7 +207,8 @@
                 <img src="assets/img/java.png" alt="Java">
                 <div class="card-body">
                     <h5 class="card-title">Java</h5>
-                    <p class="card-text">Java is an object-oriented programming language developed in the 90s by a team led by James Gosling at Sun Microsystems, acquired by Oracle in 2008.</p>
+                    <p class="card-text">Java is an object-oriented programming language developed in the 90s by a team
+                        led by James Gosling at Sun Microsystems, acquired by Oracle in 2008.</p>
                 </div>
             </div>
 
@@ -203,7 +216,9 @@
                 <img src="assets/img/angular.png" alt="Angular">
                 <div class="card-body">
                     <h5 class="card-title">Angular</h5>
-                    <p class="card-text">Angular is an open-source web application platform and front-end framework based on TypeScript, led by the Angular team at Google. It is a complete rewrite of AngularJS.</p>
+                    <p class="card-text">Angular is an open-source web application platform and front-end framework
+                        based on TypeScript, led by the Angular team at Google. It is a complete rewrite of AngularJS.
+                    </p>
                 </div>
             </div>
 
@@ -211,7 +226,8 @@
                 <img src="assets/img/python.png" alt="Python">
                 <div class="card-body">
                     <h5 class="card-title">Python</h5>
-                    <p class="card-text">Python is a versatile programming language widely used for web development, automation, and data analysis.</p>
+                    <p class="card-text">Python is a versatile programming language widely used for web development,
+                        automation, and data analysis.</p>
                 </div>
             </div>
 
@@ -219,7 +235,8 @@
                 <img src="assets/img/aws.png" alt="AWS">
                 <div class="card-body">
                     <h5 class="card-title">AWS</h5>
-                    <p class="card-text">AWS provides cloud computing services, including serverless architecture, storage, and messaging systems for scalable applications.</p>
+                    <p class="card-text">AWS provides cloud computing services, including serverless architecture,
+                        storage, and messaging systems for scalable applications.</p>
                 </div>
             </div>
         </div>
@@ -229,32 +246,91 @@
             <i class="fas fa-search"></i> <b>Projects</b>
         </h4>
         <hr />
-        <div class="row">
-            <div class="row content">
-                <div class="cards card mx-auto" style="width: 18rem; margin-bottom: 20px;">
-                    <img src="assets/img/bloco-de-anotacoes.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Note+ Notes | Images</h5>
-                        <h4 style="font-size: 15px; color: rgb(11, 165, 11)" class="card-title"><b>- Developed</b></h4>
-                        <p class="card-text">This application was created to save notes with images. It was designed to store some 3D printing projects I wanted to work on. This app helps me stay organized.</p>
-                    </div>
+        <div class="cards-carousel">
+            <!-- Projeto 1 -->
+            <div class="cards card">
+                <img src="assets/img/bloco-de-anotacoes.png" class="card-img-top" alt="Note+ Notes - Images | Ionic">
+                <div class="card-body">
+                    <h5 class="card-title">Note+ Notes - Images | Ionic</h5>
+                    <h4 style="font-size: 15px; color: rgb(11, 165, 11)"><b>- Developed</b></h4>
+                    <p class="card-text">This application was created to save notes with images. It helps me stay
+                        organized.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="cards card">
+                <img src="assets/img/bank.png" class="card-img-top" alt="Banco Angular + Java">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="https://github.com/DanielMoreti/backend-BANCO-CAP" target="_blank"
+                            style="text-decoration:none; color: inherit;">Bank System | Angular + Java</a></h5>
+                    <h4 style="font-size: 15px; color: rgb(11, 165, 11)"><b>- Developed</b></h4>
+                    <p class="card-text">Basic banking system with deposit, withdrawal, and balance check.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="cards card">
+                <img src="assets/img/post.png" class="card-img-top" alt="Sistema de Posts Node.js + Angular">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="https://github.com/DanielMoreti/backend-ACME" target="_blank"
+                            style="text-decoration:none; color: inherit;">Post System | Node.js + Angular</a></h5>
+                    <h4 style="font-size: 15px; color: rgb(11, 165, 11)"><b>- Developed</b></h4>
+                    <p class="card-text">Create posts with images, featuring login/password authentication.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 4 -->
+            <div class="cards card">
+                <img src="assets/img/soccer.png" class="card-img-top" alt="FutClub - Closed Project">
+                <div class="card-body">
+                    <h5 class="card-title">FutClub - Football Club Management | Angular + Java</h5>
+                    <h4 style="font-size: 15px; color: rgb(11, 165, 11)"><b>- Developed</b></h4>
+                    <p class="card-text">Management system for football clubs. <b>Closed/private project.</b></p>
                 </div>
             </div>
         </div>
+
     </div>
     <br />
 
-    <div class="container main">
-        <h4 id="Referencias" style="color: rgb(150, 150, 150); font-family: 'Lora',serif;" class="text-center">
+    <div class="container main py-5">
+        <h4 id="Referencias" class="text-center" style="color: rgb(150, 150, 150); font-family: 'Lora', serif;">
             <i class="fas fa-search"></i> <b>Image References</b>
         </h4>
-        <hr>
-        <div class="row content">
-            <div class="col-lg-7 col-md-7 col-sm-12">
-                <a href='https://pngtree.com/so/application'>Application png from pngtree.com</a>
-                <br>
-                <a href="https://www.flaticon.com/br/icones-gratis/bloco-de-anotacoes" title="note icons">Note icons created by Freepik - Flaticon</a>
-                <br />
+        <hr />
+
+        <div class="row g-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-image text-primary"></i> PNGTree</h5>
+                        <p class="card-text">Application PNGs provided by <a href="https://pngtree.com/so/application"
+                                target="_blank">pngtree.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-icons text-warning"></i> Flaticon</h5>
+                        <p class="card-text">Note icons created by Freepik - <a
+                                href="https://www.flaticon.com/br/icones-gratis/bloco-de-anotacoes"
+                                target="_blank">Flaticon</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-5 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-icons text-success"></i> Icon-Icons</h5>
+                        <p class="card-text">Icons provided by <a href="https://icon-icons.com/"
+                                target="_blank">Icon-Icons</a>.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

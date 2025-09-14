@@ -72,3 +72,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
     observer.observe(flowSection);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // --- CARROSSEL ---
+    const slider = document.querySelector('.cards-carousel');
+    if (slider) { // garante que o elemento existe
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.style.cursor = 'grabbing';
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.style.cursor = 'grab';
+        });
+
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.style.cursor = 'grab';
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2; // velocidade do arraste
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    }
+});
